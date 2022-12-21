@@ -1,7 +1,10 @@
 # Facial_paralysis_solver
  [Video Demo](https://youtu.be/VHZ4nWMulug) 
+ 
+ ![unnamed-1-e1670773801136](https://user-images.githubusercontent.com/74034793/208851215-0015e2ad-582e-4898-ad61-4cc6dc24246d.png)
 
 # Solution
+
 
 1. Transformation of models with OpenVINO Optimizer
 2. Test environment with OpenVINO Benchmark
@@ -9,6 +12,8 @@
 4. Ganimation model: Converts photos into 16 photos with different face action units
 5. face_mesh model: capture the position of contours and organs on the face and target expression photos
 6. landmark_accuracy algorithm: compare the difference between the target expression and the position of the user's organs in the camera, and compare the two for similarity
+
+![螢幕擷取畫面-2022-12-11-231824](https://user-images.githubusercontent.com/74034793/208851206-469da6e5-3134-463c-8201-2df8595528cf.jpg)
 
 Facial Paralysis Solver is divided into three parts.
 
@@ -19,3 +24,6 @@ In the second stage, after obtaining the replacement photos with different expre
 In the final stage, we convert the difference between the user's real expression and the restored expression into a component based on the relative position and size of the face organs, indicating the completion of the user's training. At the same time, the system will also prompt the user to make adjustments such as raising the eyebrows according to the position of the five senses. Finally, the system will present the overall performance of the training to the user.
 
 The above two models, Ganimation and Facemesh, both use the Model Optimizer provided by OpenVINO to convert the onnx model into IR model for subsequent optimization of the terminal machine.
+
+# Team Introduction
+We are a group from the Department of Information Management of National Chengchi University, led by Professor Fang Yu.
